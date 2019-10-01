@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/save}" method="post">
+	name:<input type="text" name="name" /><font color="red" th:errors="${user.name}"></font><br/>
+	password:<input type="password" name="password" /><font color="red" th:errors="${user.password}"></font><br/>
+	age:<input type="text" name="age" /><font color="red" th:errors="${user.age}"></font><br/>
+	<input type="submit" value="submit"/><br/>
+</form>
+</body>
+</html>
